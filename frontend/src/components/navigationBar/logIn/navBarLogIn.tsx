@@ -41,32 +41,32 @@ function NavBarLogIn() {
 	};
 
 	return (
-		<nav className="navbar">
-			<div className="navbar-left">
-				<a href="#logo-clownder" className="navbar_logo"></a>
-				<div className="navbar-searchbar">
+		<nav className="navbarLogIn">
+			<div className="navbarLogIn-left">
+				<a href="#logo-clownder" className="navbarLogIn_logo"></a>
+				<div className="navbarLogIn-searchbar">
 					<SearchBar setResults={setResults} />
 					{/* avoir la searchbar ici pose probleme avce les input de register et login (case beaucoup + grandes)*/}
 					{results.toString() != "" &&
-						<div className="navbar-searchresults">
+						<div className="navbarLogIn-searchresults">
 							<SearchResultsList results={results}/>
 							{/* {results.toString() } */}
 						</div>
 					}
 				</div>
-				<div id="navbar-left">
+				<div id="navbarLogIn-left">
 					{/* <input className="search" placeholder="Search..">
 					</input> */}
 				</div>
-				<a href="#meet" className="navbar_meet"></a>
+				<a href="#meet" className="navbarLogIn_meet"></a>
 			</div>
-			<div className="navbar-right">
-				<a href="#messageBox" className="navbar_messageBox"></a>
-				<a href="#likes" className="navbar_heart"></a>
-				<a href="#notifications" className="navbar_notifs"></a>
-				<a href="#myProfile" className="navbar_myProfile"></a>
+			<div className="navbarLogIn-right">
+				<a href="#messageBox" className="navbarLogIn_messageBox"></a>
+				<a href="#likes" className="navbarLogIn_heart"></a>
+				<a href="#notifications" className="navbarLogIn_notifs"></a>
+				<a href="#myProfile" className="navbarLogIn_myProfile"></a>
 				<a
-					href="#disconnect" className="navbar_deco"
+					href="#disconnect" className="navbarLogIn_deco"
 					onClick={(e) => {
 						e.preventDefault();
 						handleDeconnexion();

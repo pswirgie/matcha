@@ -60,9 +60,10 @@ export const SearchBar = ({ setResults }: SearchBarProps) => {
 	}
 
 	return (
-		<div className='wrapper'>
-			<FaSearch id="search-icon"/>
+		<div className='SearchBarWrapper'>
+			<FaSearch id="SearchBar-search-icon"/>
 			<input
+				className='SearchBar-input'
 				placeholder="Search..."
 				value={input}
 				onChange={(e) => handleChange(e.target.value)}

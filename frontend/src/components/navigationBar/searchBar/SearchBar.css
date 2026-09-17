@@ -1,4 +1,4 @@
-.wrapper {
+.SearchBarWrapper {
 	background-color: #f8eaf7;
 	width: 100%;
 	border-radius: 10rem;
@@ -10,7 +10,7 @@
 	opacity: 0.9;
 }
 
-input {
+.SearchBar-input {
 	background-color: transparent;
 	border: none;
 	height: 100%;
@@ -19,10 +19,10 @@ input {
 	margin-left: 8px;
 }
 
-input:focus{
+.SearchBar-input:focus{
 	outline: none;
 }
 
-#search-icon {
+#SearchBar-search-icon {
 	color:#816c87;
 }

@@ -1,5 +1,5 @@
 
-.navbar {
+.navbarLogIn {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -7,34 +7,36 @@
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 	width:100%;
 	overflow: visible;
+	min-height: 12dvh;
+	max-height: 12dvh;
 }
 
-.navbar-left {
+.navbarLogIn-left {
 	display: flex;
 	align-items: center;
 	margin-right: 1dvh;
 	margin-left: 1dvh;
 }
 
-.navbar-right {
+.navbarLogIn-right {
 	display: flex;
 	align-items: center;
 	margin-right: 1dvh;
 }
 
-.navbar-searchbar {
+.navbarLogIn-searchbar {
 	display: block;
 	position: relative;
 }
 
-.navbar-searchresults {
+.navbarLogIn-searchresults {
 	margin-top: 1dvh;
 	margin-left: 1dvh;
 	width: 100%;
 	position: absolute;
 }
 
-#navbar-left input {
+#navbarLogIn-left input {
 	width: 90%;
 	max-width: 450px;
 	height: 5dvh;
@@ -50,7 +52,7 @@
 
 /* Images ------------------------------------------------------ */
 
-.navbar_logo {
+.navbarLogIn_logo {
 	content: url('../../../assets/images/icons/logo.png');
 	display: block;
 	height: 14dvh;
@@ -58,7 +60,7 @@
 	height: auto;
 }
 
-.navbar_search {
+.navbarLogIn_search {
 	content: url('../../../assets/images/icons/search.png');
 	display: block;
 	margin-left: 1dvh;
@@ -68,7 +70,7 @@
 	height: auto;
 }
 
-.navbar_meet {
+.navbarLogIn_meet {
 	margin-left: 3dvh;
 	content: url('../../../assets/images/icons/meet.png');
 	display: block;
@@ -77,7 +79,7 @@
 	height: auto;
 }
 
-.navbar_messageBox {
+.navbarLogIn_messageBox {
 	margin-right: 3dvh;
 	content: url('../../../assets/images/icons/messageBox.png');
 	display: block;
@@ -86,7 +88,7 @@
 	height: auto;
 }
 
-.navbar_heart {
+.navbarLogIn_heart {
 	margin-right: 3dvh;
 	content: url('../../../assets/images/icons/heart_navBar.png');
 	display: block;
@@ -95,7 +97,7 @@
 	height: auto;
 }
 
-.navbar_notifs {
+.navbarLogIn_notifs {
 	margin-right: 3dvh;
 	content: url('../../../assets/images/icons/bell.png');
 	display: block;
@@ -104,7 +106,7 @@
 	height: auto;
 }
 
-.navbar_myProfile {
+.navbarLogIn_myProfile {
 	content: url('../../../assets/images/icons/myProfile.png');
 	display: block;
 	height: 8dvh;
@@ -112,7 +114,7 @@
 	height: auto;
 }
 
-.navbar_deco {
+.navbarLogIn_deco {
 	margin-left: 2dvh;
 	content: url('../../../assets/images/icons/deconnect.png');
 	display: block;

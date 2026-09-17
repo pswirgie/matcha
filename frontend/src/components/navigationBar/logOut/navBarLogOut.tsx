@@ -3,9 +3,9 @@ import "./navBarLogOut.css";
 function NavBarLogOut() {
 
 	return (
-		<div className="navbar">
-			<div className="navbar_image"></div>
-			<div className="navbar_text">
+		<div className="navbarLogOut">
+			<div className="navbarLogOut_image"></div>
+			<div className="navbarLogOut_text">
 				Clownder
 			</div>
 		</div>
