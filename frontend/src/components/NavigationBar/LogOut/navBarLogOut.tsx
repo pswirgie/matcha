@@ -1,10 +1,11 @@
 import "./navBarLogOut.css";
+import logo from '../../../assets/images/icons/logo.png';
 
 function NavBarLogOut() {
 
 	return (
 		<div className="navbarLogOut">
-			<div className="navbarLogOut_image"></div>
+			<img className="navbarLogOut_image" src={logo} alt="Logo" />
 			<div className="navbarLogOut_text">
 				Clownder
 			</div>

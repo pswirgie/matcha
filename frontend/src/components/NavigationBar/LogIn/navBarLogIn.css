@@ -7,26 +7,25 @@
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 	width:100%;
 	overflow: visible;
-	min-height: 12dvh;
-	max-height: 12dvh;
+	height: 12dvh;
 }
 
 .navbarLogIn-left {
 	display: flex;
 	align-items: center;
-	margin-right: 1dvh;
-	margin-left: 1dvh;
+	margin-right: 2dvh;
 }
 
 .navbarLogIn-right {
 	display: flex;
 	align-items: center;
-	margin-right: 1dvh;
+	margin-right: 2dvh;
 }
 
 .navbarLogIn-searchbar {
 	display: block;
 	position: relative;
+	margin-right: 2dvh;
 }
 
 .navbarLogIn-searchresults {
@@ -40,7 +39,6 @@
 	width: 90%;
 	max-width: 450px;
 	height: 5dvh;
-	margin: auto;
 	margin-top: 2dvh;
 	margin-left: 2dvh;
 	display: block;
@@ -55,9 +53,11 @@
 .navbarLogIn_logo {
 	content: url('../../../assets/images/icons/logo.png');
 	display: block;
-	height: 14dvh;
-	width: 14dvh;
+	height: 8rem;
+	width: 8rem;
 	height: auto;
+	margin-left: 1dvh;
+	margin-right: 2dvh;
 }
 
 .navbarLogIn_search {
@@ -65,8 +65,8 @@
 	display: block;
 	margin-left: 1dvh;
 	margin-top: 0.5dvh;
-	height: 4dvh;
-	width: 4dvh;
+	height: 2rem;
+	width: 2rem;
 	height: auto;
 }
 
@@ -74,52 +74,52 @@
 	margin-left: 3dvh;
 	content: url('../../../assets/images/icons/meet.png');
 	display: block;
-	height: 8dvh;
-	width: 8dvh;
+	height: 5rem;
+	width: 5rem;
 	height: auto;
 }
 
 .navbarLogIn_messageBox {
-	margin-right: 3dvh;
+	margin-right: 1dvh;
 	content: url('../../../assets/images/icons/messageBox.png');
 	display: block;
-	height: 8dvh;
-	width: 8dvh;
+	height: 6rem;
+	width: 6rem;
 	height: auto;
 }
 
 .navbarLogIn_heart {
-	margin-right: 3dvh;
+	margin-right: 1dvh;
 	content: url('../../../assets/images/icons/heart_navBar.png');
 	display: block;
-	height: 8dvh;
-	width: 8dvh;
+	height: 5rem;
+	width: 5rem;
 	height: auto;
 }
 
 .navbarLogIn_notifs {
-	margin-right: 3dvh;
+	margin-right: 1dvh;
 	content: url('../../../assets/images/icons/bell.png');
 	display: block;
-	height: 6dvh;
-	width: 6dvh;
+	height: 4rem;
+	width: 4rem;
 	height: auto;
 }
 
 .navbarLogIn_myProfile {
+	margin-right: 1dvh;
 	content: url('../../../assets/images/icons/myProfile.png');
 	display: block;
-	height: 8dvh;
-	width: 8dvh;
+	height: 4rem;
+	width: 4rem;
 	height: auto;
 }
 
 .navbarLogIn_deco {
-	margin-left: 2dvh;
-	content: url('../../../assets/images/icons/deconnect.png');
 	display: block;
-	height: 8dvh;
-	width: 8dvh;
-	height: auto;
-	border-radius: 10rem;
+	height: 6rem;
+	width: 6rem;
+	background-color: #816c87;
+	-webkit-mask: url('../../../assets/images/icons/deconnect.svg') no-repeat center / contain;;
+	mask: url('../../../assets/images/icons/deconnect.svg') no-repeat center / contain;
 }
