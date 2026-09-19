@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import CustomButton from "../components/buttons/CustomButton";
+import CustomButton from "../components/CustomButton/CustomButton";
 import { useState } from "react";
-import NavBarLogOut from "../components/navigationBar/logOut/navBarLogOut";
+import NavBarLogOut from "../components/NavigationBar/LogOut/navBarLogOut";
+import Background from "../components/Background/Background";
 
 function PasswordReset()
 {
@@ -40,7 +41,7 @@ function PasswordReset()
 			<header>
 				<NavBarLogOut></NavBarLogOut>
 			</header>
-			<div className="background">
+			<Background>
 				<div id="password-reset-container">
 					<input id="email"
 						placeholder="Your email..."
@@ -50,7 +51,7 @@ function PasswordReset()
 					/>
 					<CustomButton label="Submit" navigate={submit}></CustomButton>
 				</div>
-			</div>
+			</Background>
 		</>
 	);
 }

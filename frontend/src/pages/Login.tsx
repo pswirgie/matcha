@@ -3,8 +3,9 @@ import {Eye, EyeOff} from "lucide-react";
 import Cookies from 'universal-cookie';
 import { useNavigate } from "react-router-dom";
 import { useAuth, User } from "../AuthProvider";
-import CustomButton from "../components/buttons/CustomButton";
-import NavBarLogOut from "../components/navigationBar/logOut/navBarLogOut";
+import CustomButton from "../components/CustomButton/CustomButton";
+import NavBarLogOut from "../components/NavigationBar/LogOut/navBarLogOut";
+import Background from "../components/Background/Background";
 
 function Login() {
 	const [user, setUser] = useState("");
@@ -65,7 +66,7 @@ function Login() {
 			<header>
 				<NavBarLogOut></NavBarLogOut>
 			</header>
-			<div className="background">
+			<Background>
 				<div id="login">
 					<input
 						type="text"
@@ -85,7 +86,7 @@ function Login() {
 					<p id="forgot-password" onClick={(passwordReset)}>Forgot your password?</p>
 					<CustomButton label="Login" navigate={login}></CustomButton>
 				</div>
-			</div>
+			</Background>
 		</>
 	);
 }

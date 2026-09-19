@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import CustomButton from "../components/buttons/CustomButton";
-import NavBarLogOut from "../components/navigationBar/logOut/navBarLogOut";
+import CustomButton from "../components/CustomButton/CustomButton";
+import NavBarLogOut from "../components/NavigationBar/LogOut/navBarLogOut";
+import Background from "../components/Background/Background";
 
 function Register() {
 	const [username, setUsername] = useState("");
@@ -154,7 +155,7 @@ function Register() {
 			<header>
 				<NavBarLogOut></NavBarLogOut>
 			</header>
-			<div className="background">
+			<Background>
 				<div id="registration">
 					<h1>Register</h1>
 					<input type="text" placeholder="Username" autoComplete="username" value={username}
@@ -185,7 +186,7 @@ function Register() {
 						onChange={(event) => setCity(event.target.value)}/>
 					<CustomButton label="Register" navigate={register}></CustomButton>
 				</div>
-			</div>
+			</Background>
 		</>
 	);
 }

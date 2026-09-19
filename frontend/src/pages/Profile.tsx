@@ -1,5 +1,6 @@
 import { useAuth } from '../AuthProvider'
-import NavBarLogIn from "../components/navigationBar/logIn/navBarLogIn";
+import NavBarLogIn from "../components/NavigationBar/LogIn/navBarLogIn";
+import Background from "../components/Background/Background";
 
 function Profile() {
 	const { user } = useAuth();
@@ -11,7 +12,7 @@ function Profile() {
 			<header>
 				<NavBarLogIn></NavBarLogIn>
 			</header>
-			<div className="background">
+			<Background>
 				<div className="image"></div>
 				<div id="profile">
 					<p>Profile</p>
@@ -22,7 +23,7 @@ function Profile() {
 					<div>Gender: {user.gender}</div>
 					<div>City: {user.city}</div>
 				</div>
-			</div>
+			</Background>
 		</>
 	);
 }

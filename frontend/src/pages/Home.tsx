@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useAuth } from "../AuthProvider";
-import CustomButton from "../components/buttons/CustomButton";
-import NavBarLogOut from "../components/navigationBar/logOut/navBarLogOut";
 import { useSearchParams } from "react-router-dom";
+import CustomButton from "../components/CustomButton/CustomButton";
+import NavBarLogOut from "../components/NavigationBar/LogOut/navBarLogOut";
+import Background from "../components/Background/Background";
 
 function Home() {
 	const navigate = useNavigate();
@@ -47,12 +48,12 @@ function Home() {
 			<header>
 				<NavBarLogOut></NavBarLogOut>
 			</header>
-			<div className="background">
+			<Background>
 				<div id="home">
 					<CustomButton label="Register" navigate={register}></CustomButton>
 					<CustomButton label="Login" navigate={login}></CustomButton>
 				</div>
-			</div>
+			</Background>
 		</>
 	);
 }

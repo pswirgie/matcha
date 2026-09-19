@@ -1,7 +1,8 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
-import CustomButton from "../components/buttons/CustomButton";
+import CustomButton from "../components/CustomButton/CustomButton";
 import { useState } from "react";
-import NavBarLogOut from "../components/navigationBar/logOut/navBarLogOut";
+import NavBarLogOut from "../components/NavigationBar/LogOut/navBarLogOut";
+import Background from "../components/Background/Background";
 
 function PasswordChange()
 {
@@ -82,7 +83,7 @@ function PasswordChange()
 			<header>
 				<NavBarLogOut></NavBarLogOut>
 			</header>
-			<div className="background">
+			<Background>
 				<div id="password-reset-container">
 					<input type="password" placeholder="New password" autoComplete="new-password" maxLength={30} value={password}
 						onChange={(event) => updatePasswordRequirements(event.target.value)}/>
@@ -96,7 +97,7 @@ function PasswordChange()
 						onChange={(event) => updateRepeatPassword(event.target.value)}/>
 					<CustomButton label="Submit" navigate={submit}></CustomButton>
 				</div>
-			</div>
+			</Background>
 		</>
 	);
 }
