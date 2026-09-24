@@ -8,7 +8,6 @@
 # Clownder (Matcha)
 </div>
 
---- Work in progress ---
 
 - [Clownder (Matcha)](#clownder)
   -  [1. Description](#1-description)
@@ -19,6 +18,7 @@
 <br><br><br>
 
 ## 1. Description
+--- Work in progress ---
 This project is a dating web application built with micro-framework.
 
 Current Progress
