@@ -1,4 +1,5 @@
 *This project has been created as part of the 42 curriculum by scraeyme, pswirgie.*
+<p id="top"></p>
 
 <!-- new lines -->
 <br>
@@ -37,9 +38,18 @@ Next Steps
 - Popularity score (Fame rating)
 - Navigation with filters/sorting
 
+<!-- new lines -->
+<br><br>
+
 ## 2. Instructions
 Run in local :
 1. `make install`
 2. `make logs-frontend` -> click on localhost link
 
+[back to top](#top)
 
+<!-- new lines -->
+<br><br>
+
+## 3. Resources
+[back to top](#top)
