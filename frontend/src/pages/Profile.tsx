@@ -10,7 +10,7 @@ function Profile() {
 	return (
 		<>
 			<header>
-				<NavBarLogIn></NavBarLogIn>
+				<NavBarLogIn/>
 			</header>
 			<Background>
 				<div className="profile-content">
