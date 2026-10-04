@@ -13,15 +13,17 @@ function Profile() {
 				<NavBarLogIn></NavBarLogIn>
 			</header>
 			<Background>
-				<div className="image"></div>
-				<div id="profile">
-					<p>Profile</p>
-					<div>Username: {user.username}</div>
-					<div>First name: {user.first_name}</div>
-					<div>Last name: {user.last_name}</div>
-					<div>Email: {user.email}</div>
-					<div>Gender: {user.gender}</div>
-					<div>City: {user.city}</div>
+				<div className="profile-content">
+					<div className="profile-image"></div>
+					<div className="profile-text">
+						<p>Profile</p>
+						<div>Username: {user.username}</div>
+						<div>First name: {user.first_name}</div>
+						<div>Last name: {user.last_name}</div>
+						<div>Email: {user.email}</div>
+						<div>Gender: {user.gender}</div>
+						<div>City: {user.city}</div>
+					</div>
 				</div>
 			</Background>
 		</>

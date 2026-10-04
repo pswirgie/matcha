@@ -12,7 +12,7 @@ export const SearchResultsList = ({ results }: SearchResultsListProps) => {
 		<div className='results_list'>
 			{results.map((result) => {
 				return <ResultPrint username={result.username} />;
-			}
+				}
 			)}
 		</div>
 	);

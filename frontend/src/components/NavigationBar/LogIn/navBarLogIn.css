@@ -1,125 +1,103 @@
-
 .navbarLogIn {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background:#c9b5c2;
-	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-	width:100%;
-	overflow: visible;
-	height: 12dvh;
+	gap: 0.5rem;
+	background: #c9b5c2;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+	width: 100%;
+	min-height: 4rem;
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
 }
 
-.navbarLogIn-left {
-	display: flex;
-	align-items: center;
-	margin-right: 2dvh;
-}
-
+.navbarLogIn-left,
 .navbarLogIn-right {
 	display: flex;
 	align-items: center;
-	margin-right: 2dvh;
+	gap: 0.75rem;
+	min-width: 0;
+}
+
+.navbarLogIn-left {
+	flex: 1;
 }
 
 .navbarLogIn-searchbar {
-	display: block;
 	position: relative;
-	margin-right: 2dvh;
+	min-width: 0;
+	margin-right: 8dvh;
 }
 
 .navbarLogIn-searchresults {
-	margin-top: 1dvh;
-	margin-left: 1dvh;
-	width: 100%;
 	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	margin-top: 0.5rem;
 }
 
-#navbarLogIn-left input {
-	width: 90%;
+.navbarLogIn-left input {
+	width: 100%;
 	max-width: 450px;
-	height: 5dvh;
-	margin-top: 2dvh;
-	margin-left: 2dvh;
-	display: block;
+	height: 2.5rem;
+	border: none;
 	border-radius: 16rem;
-	border-style: none;
-	font-size: 20px;
-	background:#ffffff75;
+	padding: 0 1rem;
+	font-size: 1rem;
+	background: #ffffff75;
+	box-sizing: border-box;
 }
-
-/* Images ------------------------------------------------------ */
 
 .navbarLogIn_logo {
-	content: url('../../../assets/images/icons/logo.png');
 	display: block;
-	height: 8rem;
-	width: 8rem;
+	width: clamp(3rem, 6vw, 6rem);
 	height: auto;
-	margin-left: 1dvh;
-	margin-right: 2dvh;
+	flex-shrink: 0;
 }
 
-.navbarLogIn_search {
-	content: url('../../../assets/images/icons/search.png');
-	display: block;
-	margin-left: 1dvh;
-	margin-top: 0.5dvh;
-	height: 2rem;
-	width: 2rem;
-	height: auto;
-}
-
-.navbarLogIn_meet {
-	margin-left: 3dvh;
-	content: url('../../../assets/images/icons/meet.png');
-	display: block;
-	height: 5rem;
-	width: 5rem;
-	height: auto;
-}
-
-.navbarLogIn_messageBox {
-	margin-right: 1dvh;
-	content: url('../../../assets/images/icons/messageBox.png');
-	display: block;
-	height: 6rem;
-	width: 6rem;
-	height: auto;
-}
-
-.navbarLogIn_heart {
-	margin-right: 1dvh;
-	content: url('../../../assets/images/icons/heart_navBar.png');
-	display: block;
-	height: 5rem;
-	width: 5rem;
-	height: auto;
-}
-
-.navbarLogIn_notifs {
-	margin-right: 1dvh;
-	content: url('../../../assets/images/icons/bell.png');
-	display: block;
-	height: 4rem;
-	width: 4rem;
-	height: auto;
-}
-
-.navbarLogIn_myProfile {
-	margin-right: 1dvh;
-	content: url('../../../assets/images/icons/myProfile.png');
-	display: block;
-	height: 4rem;
-	width: 4rem;
-	height: auto;
-}
-
+.navbarLogIn_meet,
+.navbarLogIn_messageBox,
+.navbarLogIn_heart,
+.navbarLogIn_notifs,
+.navbarLogIn_myProfile,
 .navbarLogIn_deco {
 	display: block;
-	height: 6rem;
-	width: 6rem;
+	width: clamp(2rem, 6vw, 4.5rem);
+	height: auto;
+	flex-shrink: 0;
+}
+
+.navbarLogIn_logo       { content: url('../../../assets/images/icons/logo.png'); }
+.navbarLogIn_meet       { content: url('../../../assets/images/icons/meet.png'); }
+.navbarLogIn_messageBox { content: url('../../../assets/images/icons/messageBox.png'); }
+.navbarLogIn_heart      { content: url('../../../assets/images/icons/heart_navBar.png'); }
+.navbarLogIn_notifs     { content: url('../../../assets/images/icons/bell.png'); }
+.navbarLogIn_myProfile  { content: url('../../../assets/images/icons/myProfile.png'); }
+
+/* .navbarLogIn_search {
+	content: url('../../../assets/images/icons/search.png');
+	display: block;
+	width: 1.5rem;
+	height: auto;
+} */
+
+.navbarLogIn_deco {
+	aspect-ratio: 1;
 	background-color: #816c87;
-	-webkit-mask: url('../../../assets/images/icons/deconnect.svg') no-repeat center / contain;;
+	-webkit-mask: url('../../../assets/images/icons/deconnect.svg') no-repeat center / contain;
 	mask: url('../../../assets/images/icons/deconnect.svg') no-repeat center / contain;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+	.navbarLogIn {
+		padding: 0.25rem 0.5rem;
+	}
+	.navbarLogIn-right {
+		gap: 0.25rem;
+	}
+	.navbarLogIn_meet {
+		display: none; /* ou déplace-le dans un menu burger */
+	}
 }

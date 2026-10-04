@@ -46,17 +46,12 @@ function NavBarLogIn() {
 				<a href="#logo-clownder" className="navbarLogIn_logo"></a>
 				<div className="navbarLogIn-searchbar">
 					<SearchBar setResults={setResults} />
-					{/* avoir la searchbar ici pose probleme avce les input de register et login (case beaucoup + grandes)*/}
 					{results.toString() != "" &&
 						<div className="navbarLogIn-searchresults">
 							<SearchResultsList results={results}/>
 							{/* {results.toString() } */}
 						</div>
 					}
-				</div>
-				<div id="navbarLogIn-left">
-					{/* <input className="search" placeholder="Search..">
-					</input> */}
 				</div>
 				<a href="#meet" className="navbarLogIn_meet"></a>
 			</div>
