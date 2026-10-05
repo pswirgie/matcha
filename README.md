@@ -17,7 +17,7 @@
 <!-- new lines -->
 <br><br><br>
 
-[Vidéo explorative](https://pswirgie.github.io/Portfolio/blog/post1/)
+[demonstration video](https://pswirgie.github.io/Portfolio/blog/post1/)
 
 ## 1. Description
 --- Work in progress ---
